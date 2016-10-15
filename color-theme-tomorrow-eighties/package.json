@@ -1,0 +1,12 @@
+{
+  "name": "hyper-color-theme-tomorrow-eighties",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jnmandal/hyper-color-theme-tomorrow/tree/master/color-theme-tomorrow-eighties"
+  },
+  "author": "@jnmandal",
+  "license": "GPL-3.0"
+}
