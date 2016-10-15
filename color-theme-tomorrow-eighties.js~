@@ -1,0 +1,49 @@
+const colors = {
+  // special colors
+  background:  '#2d2d2d',
+  currentLine: '#393939',
+  selection:   '#515151',
+  foreground:  '#cccccc',
+  comment:     '#999999',
+  // base colors
+  white:  '#ffffff',
+  red:    '#f2777a',
+  orange: '#f99157',
+  yellow: '#ffcc66',
+  green:  '#99cc99',
+  aqua:   '#66cccc',
+  blue:   '#6699cc',
+  purple: '#cc99cc'
+};
+
+const lightenPercent = 20;
+
+exports.decorateConfig = (config) => {
+  return Object.assign({}, config, {
+    // terminal 
+    cursorColor:     colors.selection,
+    foregroundColor: colors.foreground,
+    backgroundColor: colors.background,
+    borderColor:     colors.selection,
+    // base colors
+    colors: {
+      black:   colors.currentLine,
+      red:     colors.red,
+      green:   colors.green,
+      yellow:  colors.yellow,
+      blue:    colors.blue,
+      magenta: colors.purple,
+      cyan:    colors.aqua,
+      white:   colors.white,
+      // light colors
+      lightBlack:   shadeColor(colors.currentLine, lightenPercent),
+      lightRed:     shadeColor(colors.red, lightenPercent),
+      lightGreen:   shadeColor(colors.green, lightenPercent),
+      lightYellow:  shadeColor(colors.yellow, lightenPercent),
+      lightBlue:    shadeColor(colors.blue, lightenPercent),
+      lightMagenta: shadeColor(colors.purple, lightenPercent),
+      lightCyan:    shadeColor(colors.aqua, lightenPercent),
+      lightWhite:   colors.white
+    }
+  });
+}
