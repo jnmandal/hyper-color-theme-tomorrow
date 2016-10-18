@@ -22,7 +22,7 @@ const colors = {
   // special colors
   background:  '#2d2d2d',
   currentLine: '#393939',
-  selection:   '#515151',
+  selection:   '#515151b3',
   foreground:  '#cccccc',
   comment:     '#999999',
   // base colors
