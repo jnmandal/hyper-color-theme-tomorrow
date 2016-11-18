@@ -36,7 +36,7 @@ const colors = {
   purple: '#cc99cc'
 };
 
-const lightenPercent = 20;
+const lightenPercent = 35;
 
 exports.decorateConfig = (config) => {
   return Object.assign({}, config, {
@@ -56,7 +56,7 @@ exports.decorateConfig = (config) => {
       cyan:    colors.aqua,
       white:   colors.white,
       // light colors
-      lightBlack:   shadeColor(colors.currentLine, lightenPercent),
+      lightBlack:   shadeColor(colors.currentLine, 2.5 * lightenPercent),
       lightRed:     shadeColor(colors.red, lightenPercent),
       lightGreen:   shadeColor(colors.green, lightenPercent),
       lightYellow:  shadeColor(colors.yellow, lightenPercent),
