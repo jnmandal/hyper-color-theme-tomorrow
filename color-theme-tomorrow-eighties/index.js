@@ -44,7 +44,7 @@ exports.decorateConfig = (config) => {
     cursorColor:     colors.selection,
     foregroundColor: colors.foreground,
     backgroundColor: colors.background,
-    borderColor:     colors.selection,
+    borderColor:     colors.foreground,
     // base colors
     colors: {
       black:   colors.currentLine,
